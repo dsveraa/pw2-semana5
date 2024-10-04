@@ -1,0 +1,39 @@
+.nav-item .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    width: auto; 
+    max-width: 250px; 
+    transform: translateX(-20%);
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .nav-item .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+}
+
+.cart-style {
+    display: flex;
+}
+
+.position-relative .badge {
+    font-size: 0.6rem;
+    padding: 0.2em 0.4em;
+    right: -5px; 
+    top: -5px; 
+    width: 18px;
+    height: 18px; 
+    border-radius: 50%; 
+    line-height: 18px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
