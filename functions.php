@@ -31,6 +31,9 @@ function add_suggestions($packages, $date, $nights, $destination) {
     } else {
         add_suggestions($packages, $date, $nights, $destination);
     }
+    if ($suggestion == NULL) {
+        $suggestion = add_suggestions($packages, $date, $nights, $destination);
+    }
     return $suggestion;
 }
 
